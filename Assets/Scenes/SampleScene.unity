@@ -1732,6 +1732,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turn: -1
+  maxDepth: 4
+  heuristic: 2
 --- !u!1 &316377945
 GameObject:
   m_ObjectHideFlags: 0
@@ -3049,6 +3051,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turn: 1
+  maxDepth: 4
+  heuristic: 3
 --- !u!1 &668060023
 GameObject:
   m_ObjectHideFlags: 0
