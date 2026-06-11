@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -236,7 +236,7 @@ public class Controller : MonoBehaviour
         {
             if (Constants.Player1.Equals("AI"))
             {
-                int tile=player1.GetComponent<Player>().SelectTile(board);
+                int tile=player1.GetComponent<PlayerDavidBayonaLujan>().SelectTile(board);
                 ClickOnTile(tile);
             }
         }
@@ -245,7 +245,7 @@ public class Controller : MonoBehaviour
         {
             if (Constants.Player2.Equals("AI"))
             {                               
-                int tile = player2.GetComponent<Player>().SelectTile(board);
+                int tile = player2.GetComponent<PlayerDavidBayonaLujan>().SelectTile(board);
                 ClickOnTile(tile);
             }
              
