@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\david\\Downloads\\othello-practica\\Simulator\\Simulator.csproj": {}
+    "D:\\Users\\David\\Downloads\\othello-practica\\Simulator\\Simulator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\david\\Downloads\\othello-practica\\Simulator\\Simulator.csproj": {
+    "D:\\Users\\David\\Downloads\\othello-practica\\Simulator\\Simulator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\Downloads\\othello-practica\\Simulator\\Simulator.csproj",
+        "projectUniqueName": "D:\\Users\\David\\Downloads\\othello-practica\\Simulator\\Simulator.csproj",
         "projectName": "Simulator",
-        "projectPath": "C:\\Users\\david\\Downloads\\othello-practica\\Simulator\\Simulator.csproj",
-        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\Downloads\\othello-practica\\Simulator\\obj\\",
+        "projectPath": "D:\\Users\\David\\Downloads\\othello-practica\\Simulator\\Simulator.csproj",
+        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\David\\Downloads\\othello-practica\\Simulator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
