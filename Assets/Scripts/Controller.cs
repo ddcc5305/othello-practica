@@ -231,27 +231,44 @@ public class Controller : MonoBehaviour
 
     public void NextTurn()
     {
-
         if (turn == 1)
         {
             if (Constants.Player1.Equals("AI"))
             {
-                int tile=player1.GetComponent<PlayerDavidBayonaLujan>().SelectTile(board);
+                if (player1 == null)
+                {
+                    Debug.LogError("Error: El GameObject player1 no está asignado en el Inspector del script Controller.");
+                    return;
+                }
+                PlayerDavidBayonaLujan ai = player1.GetComponent<PlayerDavidBayonaLujan>();
+                if (ai == null)
+                {
+                    Debug.LogError("Error: El GameObject player1 no tiene asignado el script PlayerDavidBayonaLujan (puede figurar como 'Missing Script' en el Inspector debido al renombrado).");
+                    return;
+                }
+                int tile = ai.SelectTile(board);
                 ClickOnTile(tile);
             }
         }
-
         else
         {
             if (Constants.Player2.Equals("AI"))
-            {                               
-                int tile = player2.GetComponent<PlayerDavidBayonaLujan>().SelectTile(board);
+            {
+                if (player2 == null)
+                {
+                    Debug.LogError("Error: El GameObject player2 no está asignado en el Inspector del script Controller.");
+                    return;
+                }
+                PlayerDavidBayonaLujan ai = player2.GetComponent<PlayerDavidBayonaLujan>();
+                if (ai == null)
+                {
+                    Debug.LogError("Error: El GameObject player2 no tiene asignado el script PlayerDavidBayonaLujan (puede figurar como 'Missing Script' en el Inspector debido al renombrado).");
+                    return;
+                }
+                int tile = ai.SelectTile(board);
                 ClickOnTile(tile);
             }
-             
         }
-
-
     }
 
     int GetWinner(int blackPieces, int whitePieces)

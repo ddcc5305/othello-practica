@@ -1728,12 +1728,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 292032086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2eaa512fcb68694c8b578dedcffed51, type: 3}
+  m_Script: {fileID: 11500000, guid: 35265d8724da16c4a952c34ba2d392b4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDavidBayonaLujan
   turn: -1
   maxDepth: 4
-  heuristic: 2
+  heuristic: 1
 --- !u!1 &316377945
 GameObject:
   m_ObjectHideFlags: 0
@@ -3047,12 +3047,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 649005210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2eaa512fcb68694c8b578dedcffed51, type: 3}
+  m_Script: {fileID: 11500000, guid: 35265d8724da16c4a952c34ba2d392b4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDavidBayonaLujan
   turn: 1
   maxDepth: 4
-  heuristic: 3
+  heuristic: 1
 --- !u!1 &668060023
 GameObject:
   m_ObjectHideFlags: 0
