@@ -1,0 +1,24 @@
+================================================================================
+SIMULADOR DE OTHELLO AI (VISUALIZADOR LOCAL)
+================================================================================
+
+Este componente permite ejecutar y visualizar partidas a gran velocidad para
+analizar el rendimiento de las heurísticas (H1-H4) y recopilar los datos
+del estudio de ablación.
+
+REQUISITOS:
+- SDK de .NET instalado.
+
+INSTRUCCIONES DE EJECUCIÓN:
+1. Abre una consola de comandos en la raíz del proyecto.
+2. Ejecuta el comando:
+   dotnet run --project Simulator/Simulator.csproj
+3. Entra en el navegador a la dirección:
+   http://localhost:5080
+
+FUNCIONALIDADES:
+- Selección de heurística (H1, H2, H3, H4), color de la IA y tipo de rival.
+- Simulación instantánea en el backend en C#.
+- Visualización de la partida paso a paso (deslizador de progreso y controles).
+- Historial detallado de jugadas y marcador final.
+================================================================================

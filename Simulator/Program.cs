@@ -512,8 +512,8 @@ string GetHtmlContent()
 </head>
 <body>
     <header>
-        <h1>Visualizador Interactivo Othello AI</h1>
-        <p>Prueba y analiza tus algoritmos heurísticos en tiempo real</p>
+        <h1>Simulador Othello</h1>
+        <p>Entorno de pruebas de heurísticas</p>
     </header>
 
     <div class=""container"">
@@ -552,7 +552,7 @@ string GetHtmlContent()
             </button>
 
             <div class=""heuristics-desc"" id=""heuristics-desc"">
-                <strong>Heurística actual:</strong> H3 avanzada. Utiliza esquinas normalizadas, estabilidad calculando fichas no flanqueables, y paridad de piezas. Es muy defensiva y estratégica.
+                <strong>Heurística actual:</strong> H3 (Estabilidad y penalizaciones dinámicas en casillas C/X).
             </div>
 
             <hr style=""border-color: var(--border-color);"">
@@ -586,9 +586,9 @@ string GetHtmlContent()
             </div>
 
             <div class=""playback-controls"">
-                <button class=""btn"" id=""btn-prev"">◀ Anterior</button>
-                <button class=""btn"" id=""btn-play"">▶ Reproducir</button>
-                <button class=""btn"" id=""btn-next"">Siguiente ▶</button>
+                <button class=""btn"" id=""btn-prev"">Anterior</button>
+                <button class=""btn"" id=""btn-play"">Reproducir</button>
+                <button class=""btn"" id=""btn-next"">Siguiente</button>
             </div>
         </div>
     </div>
@@ -607,10 +607,10 @@ string GetHtmlContent()
         const logEl = document.getElementById('history-log');
 
         const descriptions = {
-            1: ""<strong>H1 (Básica):</strong> Solo calcula la diferencia numérica de fichas. Prioriza capturar la mayor cantidad posible de fichas de inmediato (Greedy)."",
-            2: ""<strong>H2 (Estratégica):</strong> Valora mucho el control de casillas clave mediante una tabla de pesos (las esquinas valen +100) y también calcula la movilidad (opciones de movimiento posibles)."",
-            3: ""<strong>H3 (Avanzada):</strong> Combina control de esquinas con estabilidad (fichas que ya no se pueden dar la vuelta) y penalizaciones si se juega en casillas adyacentes a esquinas vacías."",
-            4: ""<strong>H4 (Adaptativa):</strong> Utiliza pesos que cambian con funciones no lineales según la fase del juego: prioriza movilidad al principio y la diferencia de fichas al final.""
+            1: ""<strong>H1:</strong> Diferencia directa de fichas."",
+            2: ""<strong>H2:</strong> Tabla de pesos posicionales y movilidad normalizada."",
+            3: ""<strong>H3:</strong> Estabilidad de piezas y penalizaciones dinámicas en casillas C/X."",
+            4: ""<strong>H4:</strong> Comportamiento adaptativo según la fase de la partida.""
         };
 
         document.getElementById('heuristic-select').addEventListener('change', (e) => {
